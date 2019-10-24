@@ -5,174 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>day1</title>
+    <title>咖啡</title>
+    <link rel="stylesheet" href="css/coffee.css">
 </head>
-<style>
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .header {
-        height: 100px;
-        background-color: #096dd9;
-        text-align: center;
-    }
-    .header::before{
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-        margin-right: -0.25em;
-    }
-    .header .top {
-        width: 350px;
-        height: 66px;
-        background-color: #096dd9;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .header .top img {
-        float: left;
-        width: 50px;
-        height: 50px;
-    }
-
-    .header .top p {
-        color: white;
-        font-size: 50px;
-        float: left;
-    }
-
-    .content {
-        height: 3800px;
-        background-color: #bae7ff;
-    }
-
-    .content .left {
-        height: 100%;
-        width: 20%;
-        float: left;
-        background-color: #1890ff;
-    }
-
-    .content .left .coffee_list {
-        position: fixed;
-    }
-
-    .content .left .coffee_list li {
-        font-size: 20px;
-        margin-left: 30px;
-        padding-top: 20px;
-    }
-
-    .content .left .coffee_list li a {
-        font-size: 20px;
-        color: white;
-        text-decoration: none;
-    }
-
-    .content .right {
-        height: 100%;
-        width: 80%;
-        float: left;
-    }
-    .content .right .right_top{
-        width:800px;
-        height: 600px;
-        margin:0 auto;
-        margin-top:10px;
-    }
-    .content .right .right_top img{
-        width: 100%;
-        height: 100%;
-    }
-
-    .content .right .nt {
-        width: 1000px;
-        height: 500px;
-        margin-top: 20px;
-    }
-
-    .content .right .cimg {
-        margin-left:20px;
-        width: 400px;
-        height: 300px;
-    }
-
-    .content .right .cimg img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .content .right .tit {
-        margin-left:20px;
-        font-size: 30px;
-    }
-
-    .content .right .ant {
-        margin-left:20px;
-        font-size: 20px;
-    }
-
-    .content .right .kb {
-        width: 1000px;
-        height: 500px;
-        margin-top: 20px;
-    }
-
-    .content .right .arb {
-        width: 1000px;
-        height: 500px;
-        margin-top: 20px;
-    }
-
-    .content .right .mcf {
-        width: 1000px;
-        height: 500px;
-        margin-top: 20px;
-    }
-
-    .content .right .mqd {
-        width: 1000px;
-        height: 500px;
-        margin-top: 20px;
-    }
-    .content .price{
-        margin:0 auto;
-        width: 600px;
-        height: 350px
-    }
-    .content .price p{
-        font-size: 40px;
-        text-align: center;
-    }
-    .content .price table{
-        margin:20px auto;
-        width: 500px;
-        height: 250px;
-        border-collapse: collapse;
-    }
-    .content .price table td,.content .price table th{
-        border:1px solid #000;
-    }
-    .content .price table td{
-        text-align: center;
-        line-height: 100%;
-    }
-    .footer {
-        height: 50px;
-        background-color: #096dd9;
-    }
-    .footer p {
-        text-align: center;
-        color: white;
-        font-size: 20px;
-        line-height: 50px;
-    }
-</style>
-
 <body>
     <div class="header">
         <div class="top">
@@ -208,23 +43,23 @@
                     </tr>
                     <tr>
                         <td>拿铁</td>
-                        <td>100</td>
+                        <td class="jg">100</td>
                     </tr>
                     <tr>
                         <td>卡布奇诺</td>
-                        <td>150</td>
+                        <td class="jg">150</td>
                     </tr>
                     <tr>
                         <td>奥瑞白</td>
-                        <td>200</td>
+                        <td class="jg">200</td>
                     </tr>
                     <tr>
                         <td>美式咖啡</td>
-                        <td>250</td>
+                        <td class="jg">250</td>
                     </tr>
                     <tr>
                         <td>焦糖玛奇朵</td>
-                        <td>300</td>
+                        <td class="jg">300</td>
                     </tr>
                 </table>
             </div>
@@ -233,11 +68,11 @@
             <div class="nt">
                 <div class="cimg"><img src="img/coffee_2.jpg" alt=""></div>
                 <p class="tit">拿铁</p>
-                <p class="ant">“拿铁”是意大利文“Latte”的
+                <p class="ant">拿铁是意大利文“Latte”的
                     音译，拿铁咖啡(CoffeeLatte)是花式咖啡的一种，是咖啡与牛奶交融的极至之作。意式拿铁咖啡为纯牛奶加咖啡，美式拿铁则将部分牛奶替换成奶泡，本地的拿铁多为此种。
                     那句著名的“我不在咖啡馆，就在去咖啡馆的路上”是一位音乐家在维也纳说出来的。维也纳的空气里，永远都飘荡着音乐和拿铁(Latte)咖啡的味道。</p>
             </div>
-            <br />
+            <br/>
             <a id="kb"></a>
             <div class="kb">
                 <div class="cimg"><img src="img/coffee_3.jpg" alt=""></div>
@@ -260,7 +95,7 @@
             <div class="mcf">
                 <div class="cimg"><img src="img/coffee_5.jpg" alt=""></div>
                 <p class="tit">美式咖啡</p>
-                <p class="ant">“美式咖啡”（英文：Americano，意大利语：Caffè
+                <p class="ant">美式咖啡（英文：Americano，意大利语：Caffè
                     Americano）咖啡的一种，是最普通的咖啡。是使用滴滤式咖啡壶所制作出的黑咖啡，又或者是意式浓缩中加入大量的水制成。
                     美式咖啡口味比较淡。因为一般的萃取时间相对较长（大概四五分钟），所以咖啡因含量较高</p>
             </div>
