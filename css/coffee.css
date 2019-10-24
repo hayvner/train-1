@@ -70,6 +70,10 @@
 .content .left .coffee_list li a:hover{
     background-color: #91d5ff;
 }
+.content .left .coffee_list li a:active{
+    background-color: #e6f7ff;
+    color:black
+}
 .content .right {
     height: 100%;
     width: 80%;
