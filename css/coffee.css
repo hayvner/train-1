@@ -7,58 +7,42 @@ div{
   }
 .header {
     height: 100px;
-    min-width: 600px;
+    min-width: 800px;
     background-color: #096dd9;
     text-align: center;
 }
-.header::before{
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em;
-}
+
 .header .top {
-    min-width: 350px;
+    min-width: 500px;
     height: 66px;
     background-color: #096dd9;
-    display: inline-block;
-    vertical-align: middle;
+    text-align: center;
+    line-height: 100px;
 }
 
 .header .top img {
-    float: left;
-    width: 50px;
+    width: 80px;
     height: 50px;
+    vertical-align: middle;
+    line-height: 100px;
 }
-
-.header .top p {
-    color: white;
-    font-size: 50px;
-    float: left;
-}
-
 .content {
     width: 100%;
-    min-width: 600px;
-    background-color: #bae7ff;
+    min-width: 800px;
+    background-color: #1890ff; 
     display: block;
 }
 
 .content .left {
-    min-height: 3800px;
-    padding-bottom: 0px;
-    margin-bottom: -0px;
+    min-height: 3400px;
     width: 20%;
     float: left;
     background-color: #1890ff;
 }
 
 .content .left .coffee_list {
+    min-height: 350px;
     position: sticky;
-/*     padding-bottom: 3000px;
-    margin-bottom: -3000px; */
-
     top: 0;
 
 }
@@ -88,21 +72,25 @@ div{
     color:black
 }
 .content .right {
-    height: 3800px;
-    height: 100%;
     width: 80%;
     float: left;
+    background-color: #bae7ff;
 }
 .content .right .right_top{
+    margin:0 auto;
     text-align: center;
     margin-top:15px;
+    width: 80%;
+    max-width: 800px;
 }
 .content .right .right_top img{
-    width: 60%;
+    margin-top: 20px;
+    margin-bottom:20px;
+    width: 100%;
 }
 
 .content .right .nt {
-    min-width: 1000px;
+    min-width: 600px;
     min-height: 500px;
     margin-top: 20px;
 }
@@ -131,31 +119,32 @@ div{
     font-size: 32px;
 }
 .content .right .kb {
-    min-width: 1000px;
+    min-width: 600px;
     min-height: 500px;
     margin-top: 20px;
 }
 
 .content .right .arb {
-    min-width: 1000px;
+    min-width: 600px;
     min-height: 500px;
     margin-top: 20px;
 }
 
 .content .right .mcf {
-    min-width: 1000px;
+    min-width: 600px;
     min-height: 500px;
     margin-top: 20px;
 }
 
 .content .right .mqd {
-    min-width: 1000px;
+    min-width: 600px;
     min-height: 500px;
     margin-top: 20px;
 }
 .content .price{
     margin:0 auto;
     width:60%;
+    max-width: 800px;
 }
 .content .price p{
     font-size: 40px;
@@ -178,7 +167,7 @@ div{
         content: '￥';
 }
 .footer {
-    min-width: 600px;
+    min-width: 800px;
     height: 50px;
     background-color: #096dd9;
 }
