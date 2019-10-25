@@ -2,9 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
-
+div{
+    display: block;   
+  }
 .header {
     height: 100px;
+    min-width: 600px;
     background-color: #096dd9;
     text-align: center;
 }
@@ -16,7 +19,7 @@
     margin-right: -0.25em;
 }
 .header .top {
-    width: 350px;
+    min-width: 350px;
     height: 66px;
     background-color: #096dd9;
     display: inline-block;
@@ -36,22 +39,29 @@
 }
 
 .content {
-    height: 3800px;
+    width: 100%;
+    min-width: 600px;
     background-color: #bae7ff;
+    display: block;
 }
 
 .content .left {
-    height: 100%;
+    min-height: 3800px;
+    padding-bottom: 0px;
+    margin-bottom: -0px;
     width: 20%;
     float: left;
     background-color: #1890ff;
 }
 
 .content .left .coffee_list {
-    width: 20%;
-    position: fixed;
-}
+    position: sticky;
+/*     padding-bottom: 3000px;
+    margin-bottom: -3000px; */
 
+    top: 0;
+
+}
 .content .left .coffee_list li {
     list-style: none;
     font-size: 20px;
@@ -78,24 +88,22 @@
     color:black
 }
 .content .right {
+    height: 3800px;
     height: 100%;
     width: 80%;
     float: left;
 }
 .content .right .right_top{
-    width:800px;
-    height: 600px;
-    margin:0 auto;
-    margin-top:10px;
+    text-align: center;
+    margin-top:15px;
 }
 .content .right .right_top img{
-    width: 100%;
-    height: 100%;
+    width: 60%;
 }
 
 .content .right .nt {
-    width: 1000px;
-    height: 500px;
+    min-width: 1000px;
+    min-height: 500px;
     margin-top: 20px;
 }
 
@@ -123,32 +131,31 @@
     font-size: 32px;
 }
 .content .right .kb {
-    width: 1000px;
-    height: 500px;
+    min-width: 1000px;
+    min-height: 500px;
     margin-top: 20px;
 }
 
 .content .right .arb {
-    width: 1000px;
-    height: 500px;
+    min-width: 1000px;
+    min-height: 500px;
     margin-top: 20px;
 }
 
 .content .right .mcf {
-    width: 1000px;
-    height: 500px;
+    min-width: 1000px;
+    min-height: 500px;
     margin-top: 20px;
 }
 
 .content .right .mqd {
-    width: 1000px;
-    height: 500px;
+    min-width: 1000px;
+    min-height: 500px;
     margin-top: 20px;
 }
 .content .price{
     margin:0 auto;
-    width: 600px;
-    height: 350px
+    width:60%;
 }
 .content .price p{
     font-size: 40px;
@@ -156,8 +163,8 @@
 }
 .content .price table{
     margin:20px auto;
-    width: 500px;
-    height: 250px;
+    width: 100%;
+    height: 350px;
     border-collapse: collapse;
 }
 .content .price table td,.content .price table th{
@@ -171,6 +178,7 @@
         content: '￥';
 }
 .footer {
+    min-width: 600px;
     height: 50px;
     background-color: #096dd9;
 }
@@ -180,3 +188,4 @@
     font-size: 20px;
     line-height: 50px;
 }
+
