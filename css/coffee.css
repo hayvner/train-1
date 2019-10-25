@@ -67,6 +67,9 @@
     border-bottom: 1px solid #000;
     text-indent: 2em;
 }
+.content .left .coffee_list li:last-child a{
+    border-bottom: none;
+}
 .content .left .coffee_list li a:hover{
     background-color: #91d5ff;
 }
